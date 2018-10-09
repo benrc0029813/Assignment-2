@@ -16,5 +16,21 @@ namespace Assignment_2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            {
+                try
+                {
+                    double d = Convert.ToDouble(textBox1.Text);
+                    double SurfaceArea = 4*Math.PI*d*d;
+                    label3.Text = SurfaceArea.ToString();
+                }
+                catch
+                {
+                    label3.Text = "Error unable to calculate.";
+                }
+            }
+        }
     }
 }
