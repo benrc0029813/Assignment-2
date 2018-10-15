@@ -23,7 +23,7 @@ namespace Assignment_2
                 try
                 {
                     double d = Convert.ToDouble(textBox1.Text);
-                    double SurfaceArea = 4*Math.PI*d*d;
+                    double SurfaceArea = 4.0*Math.PI*d*d;
                     label3.Text = SurfaceArea.ToString();
                 }
                 catch
@@ -31,6 +31,27 @@ namespace Assignment_2
                     label3.Text = "Error unable to calculate.";
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            {
+                try
+                {
+                    double d = Convert.ToDouble(textBox2.Text);
+                    double Volume = 4.0/3.0 * Math.PI * d * d * d;
+                    label4.Text = Volume.ToString();
+                }
+                catch
+                {
+                    label4.Text = "Error unable to calculate.";
+                }
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
