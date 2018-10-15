@@ -101,11 +101,19 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Sphere Surface Area & Volume",
+            "Cube Surface Area & Volume",
+            "Clyinder Surface Area & Volume",
+            "Cuboid Surface Area & Volume",
+            "Cone Surface Area & Volume"});
             this.comboBox1.Location = new System.Drawing.Point(41, 69);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button2
             // 
